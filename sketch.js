@@ -16,8 +16,8 @@ var preloadbt;
 var capture;
 
 capture = createCapture(VIDEO);
-//capture.size(320, 240);
-capture.hide(); 
+capture.size(320, 240);
+//capture.hide(); 
 
 noLoop();
   

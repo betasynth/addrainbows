@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     showVideo();
                 };
                              
-                
+                draw();
                 
             },
             // Error Callback

@@ -17,7 +17,7 @@ var capture;
 
 capture = createCapture(VIDEO);
 capture.size(320, 240);
-//capture.hide(); 
+capture.hide(); 
 
 noLoop();
   
@@ -52,13 +52,13 @@ function mousePressed() {
   
   
   capture.loadPixels();
-  var stepSize = round(constrain(mouseX / 8, 6, 32));
+  var stepSize = 5;
   for (var y=0; y<height; y+=stepSize) {
     for (var x=0; x<width; x+=stepSize) {
       var i = y * width + x;
       var darkness = (255 - capture.pixels[i*4]) / 255;
       var radius = stepSize * darkness;
-      ellipse(x, y, radius, radius);
+      ellipse(x, y+200, radius, radius);
     }
   }
   
@@ -111,7 +111,7 @@ for (var k=0; k<10; k++) {
   
   
    capture.loadPixels();
-  var stepSize = round(constrain(mouseX / 8, 6, 32));
+  var stepSize = 5;
   for (var y=0; y<height; y+=stepSize) {
     for (var x=0; x<width; x+=stepSize) {
       var i = y * width + x;

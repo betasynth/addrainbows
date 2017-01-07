@@ -17,7 +17,7 @@ var capture;
 
 capture = createCapture(VIDEO);
 //capture.size(320, 240);
-fingers.hide(); 
+capture.hide(); 
 
 noLoop();
   

@@ -49,7 +49,7 @@ function draw() {
 function mousePressed() {
   x0=mouseX;
   y0=mouseY;
-  
+  image(capture, 0, 0);  
 }
 
 

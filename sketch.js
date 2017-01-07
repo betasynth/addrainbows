@@ -13,6 +13,11 @@ var s1;
 var wid, hei;
 var w;
 var preloadbt;
+var capture;
+
+capture = createCapture(VIDEO);
+capture.size(320, 240);
+
 noLoop();
   
 }
@@ -30,6 +35,8 @@ function draw() {
   //preloadbt= loadImage("reload.png");
   
   colorMode(HSB, 100);
+  
+  image(capture, 0, 0, 320, 240);
   
   s = "Click and drag anywhere to draw RAINBOWS, Refresh to start over";
   fill(50);

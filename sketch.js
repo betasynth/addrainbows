@@ -17,6 +17,7 @@ var capture;
 
 capture = createCapture(VIDEO);
 capture.size(320, 240);
+fingers.hide(); 
 
 noLoop();
   
@@ -36,7 +37,7 @@ function draw() {
   
   colorMode(HSB, 100);
   
-  image(capture, 0, 0, 320, 240);
+  image(capture, 0, 0);
   
   s = "Click and drag anywhere to draw RAINBOWS, Refresh to start over";
   fill(50);
